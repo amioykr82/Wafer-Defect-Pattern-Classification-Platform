@@ -1,0 +1,15 @@
+kafka-python
+numpy
+opencv-python
+torch
+pandas
+onnx
+grpcio
+protobuf
+fastapi
+uvicorn
+aiohttp
+kubernetes
+prometheus-client
+python-multipart
+python-dotenv

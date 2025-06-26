@@ -1,0 +1,37 @@
+# .gitignore for Wafer Map Pattern Classification Platform
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data and model artifacts
+wafer_ai_platform/data/patterns/train/
+wafer_ai_platform/data/patterns/val/
+wafer_ai_platform/data/patterns/test/
+wafer_ai_platform/data/WM811K.pkl
+wafer_ai_platform/models/inference_model.onnx
+
+# Uploads and outputs
+wafer_ai_platform/uploads/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
