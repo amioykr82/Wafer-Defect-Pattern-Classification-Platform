@@ -53,15 +53,21 @@ This project implements a complete, end-to-end AI pipeline for automatic classif
 ## Results (Deeper CNN, Multi-Class, 20 Epochs)
 - **Validation Accuracy:** 89%
 - **Test Accuracy:** 82%
-- **Per-Class Accuracy (Validation Recall):**
-  - Center: 99%
-  - Donut: 74%
-  - Edge-Loc: 90%
-  - Edge-Ring: 98%
-  - Loc: 63%
-  - Random: 80%
-  - Scratch: 73%
-  - Near-full: 84%
+- **Validation Classification Report::**
+              precision    recall  f1-score   support
+
+      Center       0.97      1.00      0.98       640
+       Donut       0.97      0.74      0.84        78
+    Edge-Loc       0.88      0.90      0.89       779
+   Edge-Ring       0.99      0.98      0.99      1426
+         Loc       0.78      0.63      0.70       571
+      Random       0.95      0.80      0.87       124
+     Scratch       0.44      0.73      0.54       186
+   Near-full       0.94      0.84      0.89        19
+
+    accuracy                           0.89      3823
+   macro avg       0.87      0.83      0.84      3823
+weighted avg       0.90      0.89      0.89      3823
 
 **Validation Confusion Matrix:**
 

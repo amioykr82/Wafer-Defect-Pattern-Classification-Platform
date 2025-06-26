@@ -12,11 +12,11 @@ import shutil
 app = FastAPI()
 
 # Mount static directory for CSS
-app.mount("/static", StaticFiles(directory="wafer_ai_platform/static"), name="static")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
-MODEL_PATH = "wafer_ai_platform/models/inference_model.onnx"
+MODEL_PATH = "models/inference_model.onnx"
 session = ort.InferenceSession(MODEL_PATH)
-UPLOAD_DIR = "wafer_ai_platform/uploads"
+UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 CLASS_NAMES = [
